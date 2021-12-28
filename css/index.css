@@ -1,0 +1,197 @@
+body{
+    background: linear-gradient(180deg, rgba(42,42,43,1) 13%, rgba(63,63,66,1) 27%, rgba(63,63,66,1) 49%, rgba(42,42,43,1) 82%);
+}
+html{
+    scroll-behavior:smooth;
+}
+/* ---------------NAV------------------- */
+.cabecera{
+    position: sticky;
+    width: 100%;
+    margin-top:1rem;
+    margin-left: 0;
+    padding: 5px;
+    top: 0;
+    z-index: 100;
+    background-color: #4D5050;
+}
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.custom-toggler.navbar-toggler {
+    border:  2px solid white;
+}
+.custom-toggler.navbar-toggler:focus {
+    border:  2px solid white;
+}
+.cabecera .cabecera__nav{
+    padding: 0 2rem;
+}
+.cabecera__nav__button{
+    margin-left: auto;
+}
+.cabecera__nav__list{
+    margin-left: auto;
+    color: white;
+}
+.cabecera__nav__list__item{
+    margin-right: 1.5vw;
+}
+.cabecera__nav__list__item a{
+    text-decoration: none;
+    
+}
+.navbar-light .navbar-nav .nav-link{
+    color: white;
+    font-weight: 500;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    
+    color: white;
+    text-shadow: 1px 0 0 white;
+    transition: 0.25s;
+}
+.navbar-light .navbar-nav .nav-link:focus{    
+    color: white;
+}
+/*----------------FIN NAV----------------- */
+
+/* ---------------PRESENTACIÓN-------------------- */
+.presentacion{
+    margin: 10vh 0;
+}
+.presentacion__descrip{
+    display: flex;
+    flex-direction: column;
+    color: #ffff;
+    margin: 10vh 0;
+    
+}
+.presentacion__descrip__first{
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.presentacion__descrip h1{
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Bree Serif', serif;
+}
+.presentacion__descrip__coment{
+    margin-left: auto;
+    display: inline-block;
+    margin-right: 2rem;
+}
+.presentacion__descrip__coment p{
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 200;
+}
+.presentacion__img {
+    height: 60vh;
+    text-align: center;
+    margin: auto 0;
+}
+.presentacion__img img{ 
+    clip-path: ellipse(35% 35% at 50% 45%);
+    height: 100%;
+    border-radius: 20px;
+    padding: 10px;
+    transition: clip-path .5s;
+   
+    
+}
+.presentacion__img img:hover {
+    clip-path: ellipse(45% 45% at 50% 45%);
+    background: red;
+    background-blend-mode:multiply;
+
+}
+
+/* ABOUT ME */
+
+.aboutme__title{
+    font-size: 1.3rem;
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center;
+    color: white;
+}
+.aboutme__text{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-style: oblique;
+    font-size: 1.1rem;
+    text-align:justify;
+    color: white;
+}
+.aboutme__skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+    gap: 1.5rem;
+}
+.aboutme__skills_logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.aboutme__skills_logo img{
+    width: 5rem;
+}
+.aboutme__skills_logo img:hover{
+    filter: drop-shadow(1px 1px 1px white);
+    cursor: pointer;
+}
+.aboutme__skills_logo_descrip{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-style: oblique;
+    font-size: 0.8rem;
+    text-align:center;
+    color: #DCD8D8;
+}
+
+/* FOOTER */
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #4D5050;
+}
+.footer__info p{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1rem; 
+    color:#DCD8D8;
+    margin: 0;
+    padding: 5px 0;
+}
+.footer__social{
+    flex-direction: row;
+    
+}
+.footer__social__logo a i{
+ font-size: 2rem;
+ color: #DCD8D8;
+ margin: 5px;
+}
+.footer__social__logo a i:hover{
+    filter: drop-shadow(1px 0px  #DCD8D8);
+    cursor: pointer;
+}
+
+.triangulo{
+    width:0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-left: 50px solid blue;
+    border-bottom: 25px solid transparent;
+    border-right: 0 solid red;
+}
+
+
+@media (min-width:0px) and (max-width:450px) {
+    body{
+        background: red;
+        background-color: red;
+    }
+}
