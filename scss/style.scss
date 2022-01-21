@@ -7,8 +7,19 @@ html{
     scroll-behavior:smooth;
 }
 
-body{
-    background: linear-gradient(180deg, rgba(42,42,43,1) 13%, rgba(63,63,66,1) 27%, rgba(63,63,66,1) 49%, rgba(42,42,43,1) 82%);
+.container{
+    &-presentation{
+        background: linear-gradient(180deg, rgba(42,42,43,1) 13%, rgba(63,63,66,1) 27%, rgba(63,63,66,1) 49%, rgba(42,42,43,1) 82%);
+    }
+    &-aboutMe{
+        background: #444;
+    }
+    &-projects{
+        background: rgb(207, 129, 12);
+    }
+}
+.max-width{
+    padding: 0 80px;
 
 }
 /* ---------------NAV------------------- */
@@ -17,7 +28,7 @@ body{
     padding: .3em;
     top: 0;
     z-index: 30;
-    background-color: #4D5050;
+    background-color: #da9c16;
     font-size: 16px;
     margin: 0;
     &__nav{
@@ -35,10 +46,8 @@ body{
             }
             & a{
                 color: #FFF;
-                font-weight: 600;
-                font-family: 'Nanum Gothic', sans-serif;
-                font-size: 1.1em;
-                transition: 0.5s;
+                font-family: 'Ubuntu', sans-serif;                font-size: 1.1em;
+                transition: 0.5s ease all;
                 &:hover{
                     color: #FFF;
                     text-shadow: 1px 0 0 #FFF;
@@ -62,7 +71,8 @@ body{
 
 /* ---------------PRESENTATION-------------------- */
 .presentation{
-    margin: 7.5em auto;
+    min-height: 100vh;
+    margin: 0 auto;
     font-size: 16px;
     &__description{
         display: flex;
@@ -70,19 +80,18 @@ body{
         margin: auto 0;
         color:#fff;
         &__title{
-            font-family: 'Nanum Gothic', sans-serif;
-            text-align: center;
+            font-family: 'Ubuntu', sans-serif;            text-align: center;
             & p{
                 font-size: 2em;
-                
+                font-family: 'Ubuntu', sans-serif;            text-align: center;
             }
             & h1{
                 font-size: 4.5em;
-                font-family: 'Bree Serif', serif;
             }
             &__welcome{
-                font-weight: bold;
+                font-weight: 600;
                 font-style:normal;
+                color: #ffc340;
             }
             
         }
@@ -118,10 +127,11 @@ body{
 /* ---------------ABOUT ME-------------------- */
 .aboutMe{
     font-size: 16px;
-    margin: 2em auto;
+    min-height: 100vh;
+    margin: 0 auto;
     &__title{
         font-size: 2em;
-        font-family: 'Nanum Gothic', sans-serif;
+        font-family: 'Ubuntu', sans-serif;
         text-align: center;
         color: #FFF;
         
@@ -133,38 +143,50 @@ body{
         text-align:justify;
         color: #FFF;
     }
+    &__information{
+        margin: auto 0;
+    }
     &__skills{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        padding: 1em;
-        gap: 1.5em;
-        &__logo{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            & img{
-                width: 6em;
-                transition: 1.7s ease all;
-                &:hover{
-                    transform: rotate(360deg);
-                    filter: drop-shadow(1px 1px 4px #dad6d6);
-                    cursor: pointer;
+        margin: auto 0;
+        &__container{
+            display: grid;
+            grid-template-columns: repeat(auto-fill ,minmax(80px,1fr) );
+            overflow: hidden;
+            padding: 1em;
+            gap: 1.5em;
+            &__logo{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                & img{
+                    width: 100%;
+                    transition: 1.7s ease all;
+                    &:hover{
+                        transform: rotate(360deg);
+                        filter: drop-shadow(1px 1px 4px #dad6d6);
+                        cursor: pointer;
+                    }
                 }
-            }
-            &__description{
-                font-family: 'Nanum Gothic', sans-serif;
-                font-style: oblique;
-                font-size: 0.85em;
-                text-align:center;
-                color: #fff;
-                font-weight: 600;
+                &__description{
+                    font-family: 'Ubuntu', sans-serif;                
+                    font-style: oblique;
+                    font-size: 0.9em;
+                    text-align:center;
+                    color: #fff;
+                    font-weight: 400;
+                }
             }
         }
     }
     
+    
 }
 
 /* ---------------END ABOUT ME-------------------- */
+
+.projects{
+    min-height: 100vh;
+}
 
 /* FOOTER */
 .footer{
@@ -172,11 +194,11 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #4D5050;
+    background-color: #da9c16;
     padding: .4em 0;
     font-size: 16px;
     &__info p{
-        font-family: 'Nanum Gothic', sans-serif;
+        font-family: 'Ubuntu', sans-serif;
         font-size: 1.4em; 
         color:#DCD8D8;
         margin: 0;
@@ -197,34 +219,38 @@ body{
 
 
 @media only screen and (max-width:575px) {
+    .max-width{
+        padding: 0 20px;
+    }
     .presentation{
         font-size: 15px;
-        margin: 3em 0;
+        padding: 2em 0;
+        min-height: 50vh;
         &__description{
-            
             &__title{
                 & p{
                     font-size: 1.7em;
                 }
                 & h1{
-                    font-size: 3.5em;
+                    font-size: 3.1em;
                 }
             }
             &__subTitle{
-                margin: .1em auto;
-                & h2{
-                    
+                margin: .2em auto;
+                & h2{             
                     font-size: 1.2em;
                     text-align: center;
                 }
             }
         }
         &__img {
-            height: 22em;   
+            height: 22em;
+            margin: 0;
         }
     }
     .aboutMe{
         font-size: 14px;
+        min-height: 50vh;
         &__title{
             margin-top: .4em;
         }
@@ -232,15 +258,18 @@ body{
             padding: 0 .5em;
         }
         &__skills{
-            grid-template-columns: 1fr 1fr ;
+            &__container{
+                grid-template-columns: 1fr 1fr ;
             &__logo{
                 & img{
-                    width: 7em;  
+                    width: 8em;  
                 }
                 &__description{
                     font-size: 0.95em;
                 }
             }
+            }
+            
         }
     }
     .footer{
@@ -250,7 +279,8 @@ body{
 @media only screen and (min-width:576px) and (max-width:767px) {
     .presentation{
         font-size: 16px;
-        margin: 3em 0;
+        min-height: 75vh;
+        padding: 2em 0;
         &__img {
             height: 22em;   
         }
@@ -261,12 +291,15 @@ body{
             margin-top: .4em;
         }
         &__skills{
-            &__logo{
-                & img{
-                    width: 7em;  
-                }
-                &__description{
-                    font-size: 0.95em;
+            &__container{
+                grid-template-columns: repeat(3,1fr);
+                &__logo{
+                    & img{
+                        width: 7em;  
+                    }
+                    &__description{
+                        font-size: 0.95em;
+                    }
                 }
             }
         }
@@ -278,8 +311,18 @@ body{
 @media only screen and (min-width:768px) and (max-width:992px) {
     .presentation{
         font-size: 15px;
+        min-height: 60vh;
         &__img {
             height: 20em;   
+        }
+        &__description{
+            
+            &__title{
+                & h1{
+                    font-size: 4em;
+                }
+                
+            }
         }
     }
     .aboutMe{
@@ -288,14 +331,18 @@ body{
             margin-top: .4em;
         }
         &__skills{
-            &__logo{
-                & img{
-                    width: 7em;  
-                }
-                &__description{
-                    font-size: 0.95em;
+            &__container{
+                grid-template-columns: repeat(3,1fr);
+                &__logo{
+                    & img{
+                        width: 7.5em;  
+                    }
+                    &__description{
+                        font-size: 0.95em;
+                    }
                 }
             }
+            
         }
     }
     .footer{

@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Oxygen&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
     <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="./css/all.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
@@ -47,7 +47,7 @@
     <!-- END NAV -->
 
     <!-- PRESENTATION -->
-    <main id="main" class="container">
+    <main id="main" class="max-width container-presentation">
         <div id="presentation" class="row presentation">
             <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 presentation__description">
                 <div class="presentation__description__title">
@@ -71,9 +71,9 @@
     <!-- END PRESENTATION -->
 
     <!-- START ABOUT ME -->
-    <section class="container aboutMe" id="about-me">
-        <div class="row">
-            <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12">
+    <section class="max-width container-aboutMe " id="about-me" >
+        <div class="row aboutMe" >
+            <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 aboutMe__information" >
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-sm">
                         <h3 class="aboutMe__title">Sobre mi</h3>
@@ -92,32 +92,32 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 aboutMe__skills">
                 <h3 class="aboutMe__title">Habilidades</h3>
-                <div class="aboutMe__skills">
-                    <span class="aboutMe__skills__logo">
+                <div class="aboutMe__skills__container">
+                    <span class="aboutMe__skills__container__logo">
                         <img src="./asetts/html5_logo.png">
-                        <p class="aboutMe__skills__logo__description">HTML</p>
+                        <p class="aboutMe__skills__container__logo__description">HTML</p>
                     </span>
-                    <span class="aboutMe__skills__logo">
+                    <span class="aboutMe__skills__container__logo">
                         <img src="./asetts/css_logo.png">
-                        <p class="aboutMe__skills__logo__description">CSS</p>
+                        <p class="aboutMe__skills__container__logo__description">CSS</p>
                     </span>
-                    <span class="aboutMe__skills__logo">
+                    <span class="aboutMe__skills__container__logo">
                         <img src="./asetts/javascript_logo.png">
-                        <p class="aboutMe__skills__logo__description">JAVASCRIPT</p>
+                        <p class="aboutMe__skills__container__logo__description">JAVASCRIPT</p>
                     </span>
-                    <span class="aboutMe__skills__logo">
+                    <span class="aboutMe__skills__container__logo">
                         <img src="./asetts/bootstrap_logo.png">
-                        <p class="aboutMe__skills__logo__description">BOOTSTRAP</p>
+                        <p class="aboutMe__skills__container__logo__description">BOOTSTRAP</p>
                     </span>
-                    <span class="aboutMe__skills__logo">
+                    <span class="aboutMe__skills__container__logo">
                         <img src="./asetts/angular_logo.png">
-                        <p class="aboutMe__skills__logo__description">ANGULAR</p>
+                        <p class="aboutMe__skills__container__logo__description">ANGULAR</p>
                     </span>
-                    <span class="aboutMe__skills__logo">
+                    <span class="aboutMe__skills__container__logo">
                         <img src="./asetts/git_logo.png">
-                        <p class="aboutMe__skills__logo__description">GIT</p>
+                        <p class="aboutMe__skills__container__logo__description">GIT</p>
                     </span>
                 </div>
             </div>
@@ -125,14 +125,8 @@
     </section>
     <!-- END ABOUT ME -->
     <!-- START PROJECTS -->
-    <div class="container bg-danger my-4" id="projects">
-        <div class="triangulo">
-
-        </div>
-        <div class="triangulo">
-
-        </div>
-        <div class="triangulo">
+    <div class="max-width container-projects" id="projects">
+        <div class="row projects">
 
         </div>
 

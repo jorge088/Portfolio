@@ -8,8 +8,18 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+.container-presentation {
   background: linear-gradient(180deg, #2a2a2b 13%, #3f3f42 27%, #3f3f42 49%, #2a2a2b 82%);
+}
+.container-aboutMe {
+  background: #444;
+}
+.container-projects {
+  background: #cf810c;
+}
+
+.max-width {
+  padding: 0 80px;
 }
 
 /* ---------------NAV------------------- */
@@ -18,7 +28,7 @@ body {
   padding: 0.3em;
   top: 0;
   z-index: 30;
-  background-color: #4D5050;
+  background-color: #da9c16;
   font-size: 16px;
   margin: 0;
 }
@@ -39,10 +49,9 @@ body {
 }
 .header__nav__list a {
   color: #FFF;
-  font-weight: 600;
-  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 1.1em;
-  transition: 0.5s;
+  transition: 0.5s ease all;
 }
 .header__nav__list a:hover {
   color: #FFF;
@@ -63,7 +72,8 @@ body {
 /*----------------END NAV----------------- */
 /* ---------------PRESENTATION-------------------- */
 .presentation {
-  margin: 7.5em auto;
+  min-height: 100vh;
+  margin: 0 auto;
   font-size: 16px;
 }
 .presentation__description {
@@ -73,19 +83,21 @@ body {
   color: #fff;
 }
 .presentation__description__title {
-  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   text-align: center;
 }
 .presentation__description__title p {
   font-size: 2em;
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
 }
 .presentation__description__title h1 {
   font-size: 4.5em;
-  font-family: "Bree Serif", serif;
 }
 .presentation__description__title__welcome {
-  font-weight: bold;
+  font-weight: 600;
   font-style: normal;
+  color: #ffc340;
 }
 .presentation__description__subTitle {
   margin: 0.4em 0;
@@ -115,11 +127,12 @@ body {
 /* ---------------ABOUT ME-------------------- */
 .aboutMe {
   font-size: 16px;
-  margin: 2em auto;
+  min-height: 100vh;
+  margin: 0 auto;
 }
 .aboutMe__title {
   font-size: 2em;
-  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   text-align: center;
   color: #FFF;
 }
@@ -130,48 +143,59 @@ body {
   text-align: justify;
   color: #FFF;
 }
+.aboutMe__information {
+  margin: auto 0;
+}
 .aboutMe__skills {
+  margin: auto 0;
+}
+.aboutMe__skills__container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  overflow: hidden;
   padding: 1em;
   gap: 1.5em;
 }
-.aboutMe__skills__logo {
+.aboutMe__skills__container__logo {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.aboutMe__skills__logo img {
-  width: 6em;
+.aboutMe__skills__container__logo img {
+  width: 100%;
   transition: 1.7s ease all;
 }
-.aboutMe__skills__logo img:hover {
+.aboutMe__skills__container__logo img:hover {
   transform: rotate(360deg);
   filter: drop-shadow(1px 1px 4px #dad6d6);
   cursor: pointer;
 }
-.aboutMe__skills__logo__description {
-  font-family: "Nanum Gothic", sans-serif;
+.aboutMe__skills__container__logo__description {
+  font-family: "Ubuntu", sans-serif;
   font-style: oblique;
-  font-size: 0.85em;
+  font-size: 0.9em;
   text-align: center;
   color: #fff;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 /* ---------------END ABOUT ME-------------------- */
+.projects {
+  min-height: 100vh;
+}
+
 /* FOOTER */
 .footer {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #4D5050;
+  background-color: #da9c16;
   padding: 0.4em 0;
   font-size: 16px;
 }
 .footer__info p {
-  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 1.4em;
   color: #DCD8D8;
   margin: 0;
@@ -190,18 +214,23 @@ body {
 }
 
 @media only screen and (max-width: 575px) {
+  .max-width {
+    padding: 0 20px;
+  }
+
   .presentation {
     font-size: 15px;
-    margin: 3em 0;
+    padding: 2em 0;
+    min-height: 50vh;
   }
   .presentation__description__title p {
     font-size: 1.7em;
   }
   .presentation__description__title h1 {
-    font-size: 3.5em;
+    font-size: 3.1em;
   }
   .presentation__description__subTitle {
-    margin: 0.1em auto;
+    margin: 0.2em auto;
   }
   .presentation__description__subTitle h2 {
     font-size: 1.2em;
@@ -209,10 +238,12 @@ body {
   }
   .presentation__img {
     height: 22em;
+    margin: 0;
   }
 
   .aboutMe {
     font-size: 14px;
+    min-height: 50vh;
   }
   .aboutMe__title {
     margin-top: 0.4em;
@@ -220,13 +251,13 @@ body {
   .aboutMe__text {
     padding: 0 0.5em;
   }
-  .aboutMe__skills {
+  .aboutMe__skills__container {
     grid-template-columns: 1fr 1fr;
   }
-  .aboutMe__skills__logo img {
-    width: 7em;
+  .aboutMe__skills__container__logo img {
+    width: 8em;
   }
-  .aboutMe__skills__logo__description {
+  .aboutMe__skills__container__logo__description {
     font-size: 0.95em;
   }
 
@@ -237,7 +268,8 @@ body {
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .presentation {
     font-size: 16px;
-    margin: 3em 0;
+    min-height: 75vh;
+    padding: 2em 0;
   }
   .presentation__img {
     height: 22em;
@@ -249,10 +281,13 @@ body {
   .aboutMe__title {
     margin-top: 0.4em;
   }
-  .aboutMe__skills__logo img {
+  .aboutMe__skills__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .aboutMe__skills__container__logo img {
     width: 7em;
   }
-  .aboutMe__skills__logo__description {
+  .aboutMe__skills__container__logo__description {
     font-size: 0.95em;
   }
 
@@ -263,9 +298,13 @@ body {
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   .presentation {
     font-size: 15px;
+    min-height: 60vh;
   }
   .presentation__img {
     height: 20em;
+  }
+  .presentation__description__title h1 {
+    font-size: 4em;
   }
 
   .aboutMe {
@@ -274,10 +313,13 @@ body {
   .aboutMe__title {
     margin-top: 0.4em;
   }
-  .aboutMe__skills__logo img {
-    width: 7em;
+  .aboutMe__skills__container {
+    grid-template-columns: repeat(3, 1fr);
   }
-  .aboutMe__skills__logo__description {
+  .aboutMe__skills__container__logo img {
+    width: 7.5em;
+  }
+  .aboutMe__skills__container__logo__description {
     font-size: 0.95em;
   }
 
