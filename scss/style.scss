@@ -220,7 +220,7 @@ html{
 
 @media only screen and (max-width:575px) {
     .max-width{
-        padding: 0 20px;
+        padding: 0 15px;
     }
     .presentation{
         font-size: 15px;
@@ -277,6 +277,9 @@ html{
     }
 }
 @media only screen and (min-width:576px) and (max-width:767px) {
+    .max-width{
+        padding: 0 30px;
+    }
     .presentation{
         font-size: 16px;
         min-height: 75vh;
@@ -310,7 +313,7 @@ html{
 }
 @media only screen and (min-width:768px) and (max-width:992px) {
     .presentation{
-        font-size: 15px;
+        font-size: 40px;
         min-height: 60vh;
         &__img {
             height: 20em;   
