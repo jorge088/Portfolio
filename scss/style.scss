@@ -9,18 +9,17 @@ html{
 
 .container{
     &-presentation{
-        background: linear-gradient(180deg, rgba(42,42,43,1) 13%, rgba(63,63,66,1) 27%, rgba(63,63,66,1) 49%, rgba(42,42,43,1) 82%);
+        background: linear-gradient(180deg, #2a2a2b 15%, rgba(63,63,66,1) 35%, rgba(63,63,66,1) 45%, rgba(42,42,43,1) 100%);
     }
     &-aboutMe{
-        background: #444;
+        background: #111;
     }
     &-projects{
-        background: rgb(207, 129, 12);
+        background: linear-gradient(180deg, #2a2a2b 15%, rgba(63,63,66,1) 35%, rgba(63,63,66,1) 45%, rgba(42,42,43,1) 100%);
     }
 }
 .max-width{
     padding: 0 80px;
-
 }
 /* ---------------NAV------------------- */
 .header{
@@ -28,7 +27,7 @@ html{
     padding: .3em;
     top: 0;
     z-index: 30;
-    background-color: #da9c16;
+    background-color: #e08f15;
     font-size: 16px;
     margin: 0;
     &__nav{
@@ -45,8 +44,9 @@ html{
                 margin-right: 1em;
             }
             & a{
+                font-family: 'Ubuntu',sans-serif;                
+                font-size: 1.1em;
                 color: #FFF;
-                font-family: 'Ubuntu', sans-serif;                font-size: 1.1em;
                 transition: 0.5s ease all;
                 &:hover{
                     color: #FFF;
@@ -91,9 +91,8 @@ html{
             &__welcome{
                 font-weight: 600;
                 font-style:normal;
-                color: #ffc340;
+                color: #ffa724;
             }
-            
         }
         &__subTitle{
             margin: .4em 0;
@@ -116,7 +115,6 @@ html{
             transition: 1s ease all;
             &:hover {
                 filter: drop-shadow(1px 1px 7px #dad6d6);
-
             }
         }
     }
@@ -129,19 +127,18 @@ html{
     font-size: 16px;
     min-height: 100vh;
     margin: 0 auto;
+    color: #FFF;
     &__title{
         font-size: 2em;
         font-family: 'Ubuntu', sans-serif;
         text-align: center;
-        color: #FFF;
-        
+        margin-top: 1em;
     }
     &__text{
         font-family: 'Nanum Gothic', sans-serif;
         font-style: oblique;
         font-size: 1.3em;
         text-align:justify;
-        color: #FFF;
     }
     &__information{
         margin: auto 0;
@@ -168,11 +165,11 @@ html{
                     }
                 }
                 &__description{
+                    color: #ffa724;
                     font-family: 'Ubuntu', sans-serif;                
                     font-style: oblique;
                     font-size: 0.9em;
                     text-align:center;
-                    color: #fff;
                     font-weight: 400;
                 }
             }
@@ -194,7 +191,7 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #da9c16;
+    background-color: #4D5050;
     padding: .4em 0;
     font-size: 16px;
     &__info p{
@@ -313,7 +310,7 @@ html{
 }
 @media only screen and (min-width:768px) and (max-width:992px) {
     .presentation{
-        font-size: 40px;
+        font-size: 15px;
         min-height: 60vh;
         &__img {
             height: 20em;   

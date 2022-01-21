@@ -9,13 +9,13 @@ html {
 }
 
 .container-presentation {
-  background: linear-gradient(180deg, #2a2a2b 13%, #3f3f42 27%, #3f3f42 49%, #2a2a2b 82%);
+  background: linear-gradient(180deg, #2a2a2b 15%, #3f3f42 35%, #3f3f42 45%, #2a2a2b 100%);
 }
 .container-aboutMe {
-  background: #444;
+  background: #111;
 }
 .container-projects {
-  background: #cf810c;
+  background: linear-gradient(180deg, #2a2a2b 15%, #3f3f42 35%, #3f3f42 45%, #2a2a2b 100%);
 }
 
 .max-width {
@@ -28,7 +28,7 @@ html {
   padding: 0.3em;
   top: 0;
   z-index: 30;
-  background-color: #da9c16;
+  background-color: #e08f15;
   font-size: 16px;
   margin: 0;
 }
@@ -48,9 +48,9 @@ html {
   margin-right: 1em;
 }
 .header__nav__list a {
-  color: #FFF;
   font-family: "Ubuntu", sans-serif;
   font-size: 1.1em;
+  color: #FFF;
   transition: 0.5s ease all;
 }
 .header__nav__list a:hover {
@@ -97,7 +97,7 @@ html {
 .presentation__description__title__welcome {
   font-weight: 600;
   font-style: normal;
-  color: #ffc340;
+  color: #ffa724;
 }
 .presentation__description__subTitle {
   margin: 0.4em 0;
@@ -129,19 +129,19 @@ html {
   font-size: 16px;
   min-height: 100vh;
   margin: 0 auto;
+  color: #FFF;
 }
 .aboutMe__title {
   font-size: 2em;
   font-family: "Ubuntu", sans-serif;
   text-align: center;
-  color: #FFF;
+  margin-top: 1em;
 }
 .aboutMe__text {
   font-family: "Nanum Gothic", sans-serif;
   font-style: oblique;
   font-size: 1.3em;
   text-align: justify;
-  color: #FFF;
 }
 .aboutMe__information {
   margin: auto 0;
@@ -171,11 +171,11 @@ html {
   cursor: pointer;
 }
 .aboutMe__skills__container__logo__description {
+  color: #ffa724;
   font-family: "Ubuntu", sans-serif;
   font-style: oblique;
   font-size: 0.9em;
   text-align: center;
-  color: #fff;
   font-weight: 400;
 }
 
@@ -190,7 +190,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #da9c16;
+  background-color: #4D5050;
   padding: 0.4em 0;
   font-size: 16px;
 }
@@ -215,7 +215,7 @@ html {
 
 @media only screen and (max-width: 575px) {
   .max-width {
-    padding: 0 20px;
+    padding: 0 15px;
   }
 
   .presentation {
@@ -266,6 +266,10 @@ html {
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+  .max-width {
+    padding: 0 30px;
+  }
+
   .presentation {
     font-size: 16px;
     min-height: 75vh;
