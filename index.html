@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Oxygen&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="./css/all.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
 
@@ -51,7 +51,11 @@
         <div id="presentation" class="row presentation">
             <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 presentation__description">
                 <div class="presentation__description__title">
-                    <p>Bienvenido! Me llamo</p>
+                    <p><span class="typed"></span>! Me llamo</p>
+                    <div id="welcome" >
+                        <p>Bienvenid<i class="presentation__description__title__welcome">o</i></p>
+                        <p>Bienvenid<i class="presentation__description__title__welcome">a</i></p>
+                    </div>
                     <h1>Jorge Mendez</h1>
                 </div>
                 <div class="presentation__description__subTitle">
@@ -156,7 +160,7 @@
     </footer>
 
     <!-- ENDS FOOTER -->
-
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script type="text/javascript" src="./js/popper.min.js"></script>
     <script src="./js/practica.js"></script>
 

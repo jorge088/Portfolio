@@ -83,6 +83,11 @@ body {
   font-size: 4.5em;
   font-family: "Bree Serif", serif;
 }
+.presentation__description__title__welcome {
+  font-weight: bold;
+  text-decoration: underline;
+  font-style: normal;
+}
 .presentation__description__subTitle {
   margin: 0.4em 0;
   margin-left: auto;

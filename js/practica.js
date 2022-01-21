@@ -8,6 +8,18 @@
 // }
 // escribir();
 
+const typed =new Typed('.typed' , {
+    // strings :['Bienvenido','Bienvenida'],
+    stringsElement:'#welcome',
+    typeSpeed:200,
+    startDelay:1000,
+    smartBackspace:true,
+    backSpeed:200,
+    backDelay:1000,
+    loop:true
+});
+
+
 var prese = document.createElement("p");
 var texto = document.createTextNode("NUEVO TEXTO");
 prese.appendChild(texto);
