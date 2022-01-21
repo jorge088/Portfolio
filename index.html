@@ -10,33 +10,33 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Oxygen&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
-    <link href="./css/index.css" rel="stylesheet">
     <link href="./css/all.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
 
     <title>Jorge Mendez</title>
 </head>
 
 <body>
     <!-- NAVBAR -->
-    <header class="row cabecera">
-        <nav class="navbar navbar-expand-sm navbar-light cabecera__nav ">
-            <button class="navbar-toggler custom-toggler cabecera__nav__button" type="button" data-bs-toggle="collapse"
+    <header class="row header">
+        <nav class="navbar navbar-expand-sm  header__nav ">
+            <button class="navbar-toggler custom-toggler header__nav__button" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav cabecera__nav__list">
-                    <li class="nav-item cabecera__nav__list__item ">
+                <ul class="navbar-nav header__nav__list">
+                    <li class="nav-item header__nav__list__item ">
                         <a class="nav-link " href="#">Inicio <i class="fas fa-home"></i></a>
                     </li>
-                    <li class="nav-item cabecera__nav__list__item">
+                    <li class="nav-item header__nav__list__item">
                         <a class="nav-link" href="#about-me">Sobre mi</a>
                     </li>
-                    <li class="nav-item cabecera__nav__list__item">
+                    <li class="nav-item header__nav__list__item">
                         <a class="nav-link" href="#projects">Proyectos</a>
                     </li>
-                    <li class="nav-item cabecera__nav__list__item">
+                    <li class="nav-item header__nav__list__item">
                         <a class="nav-link" target="blank" href="./asetts/CV_MendezJorge.pdf">CV <i
                                 class="fas fa-download"></i></a>
                     </li>
@@ -47,71 +47,73 @@
     <!-- END NAV -->
 
     <!-- PRESENTATION -->
-    <main id="main" class="container-lg container-sm">
-        <div id="presentacion" class="row presentacion">
-            <div class="col-lg-8 col-md presentacion__descrip">
-                <p class="presentacion__descrip__first">Bienvenido! Me llamo</p>
-                <h1>Jorge Mendez</h1>
-                <div class="presentacion__descrip__coment">
-                    <p>Desarrollador.</p>
-                    <p>Estudiante universitario.</p>
+    <main id="main" class="container">
+        <div id="presentation" class="row presentation">
+            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 presentation__description">
+                <div class="presentation__description__title">
+                    <p>Bienvenido! Me llamo</p>
+                    <h1>Jorge Mendez</h1>
+                </div>
+                <div class="presentation__description__subTitle">
+                    <h2>Desarrollador Front End.</h2>
+                    <h2>Analista Programador Universitario.</h2>
                 </div>
             </div>
-            <div class="col-lg-4 col-md presentacion__img">
-                <img src="./asetts/perfil.jpg" alt="perfil image">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 presentation__img">
+                <img src="./asetts/perfil.jpg" alt="Foto de perfil, Mendez Jorge">
             </div>
         </div>
     </main>
     <!-- END PRESENTATION -->
 
     <!-- START ABOUT ME -->
-    <section class="container-lg container-sm about" id="about-me">
+    <section class="container aboutMe" id="about-me">
         <div class="row">
-            <div class="col-lg-8 col-sm">
+            <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12">
                 <div class="row">
-                    <div class="col-lg-12 col-sm p-4 col-sm aboutme">
-                        <h3 class="aboutme__title">Sobre mi</h3>
-                        <P class="aboutme__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-sm">
+                        <h3 class="aboutMe__title">Sobre mi</h3>
+                        <P class="aboutMe__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur
                             earum laborum dolorem vitae placeat iste laudantium, quibusdam quidem, quia minima odit
                             omnis eum deserunt aspernatur labore dolorum nisi nesciunt? Perspiciatis, voluptate autem
                             atque sint sunt omnis dolorem soluta voluptas id perferendis consequatur ex rem maxime
                             accusantium architecto non eligendi dolorum.
                         </P>
                     </div>
-                    <div class="col-lg-12 p-4 col-sm" ">
-                        <h3 class=" aboutme__title">Hobby</h3>
-                        <p class="aboutme__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-sm" >
+                        <h3 class=" aboutMe__title">Hobby</h3>
+                        <p class="aboutMe__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt
                             quasi repudiandae eaque aliquid at. Obcaecati cum, voluptas alias expedita ipsa ad aperiam
                             reprehenderit earum voluptate nesciunt nam sed dolor possimus.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 p-4 sol-sm">
-                <h3 class="aboutme__title">Habilidades</h3>
-                <div class="aboutme__skills">
-                    <span class="aboutme__skills_logo">
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                <h3 class="aboutMe__title">Habilidades</h3>
+                <div class="aboutMe__skills">
+                    <span class="aboutMe__skills__logo">
                         <img src="./asetts/html5_logo.png">
-                        <p class="aboutme__skills_logo_descrip">HTML 5</p>
+                        <p class="aboutMe__skills__logo__description">HTML</p>
                     </span>
-                    <span class="aboutme__skills_logo">
+                    <span class="aboutMe__skills__logo">
                         <img src="./asetts/css_logo.png">
-                        <p class="aboutme__skills_logo_descrip">CSS 3</p>
+                        <p class="aboutMe__skills__logo__description">CSS</p>
                     </span>
-                    <span class="aboutme__skills_logo">
+                    <span class="aboutMe__skills__logo">
                         <img src="./asetts/javascript_logo.png">
-                        <p class="aboutme__skills_logo_descrip">JAVASCRIPT</p>
+                        <p class="aboutMe__skills__logo__description">JAVASCRIPT</p>
                     </span>
-                    <span class="aboutme__skills_logo">
+                    <span class="aboutMe__skills__logo">
                         <img src="./asetts/bootstrap_logo.png">
-                        <p class="aboutme__skills_logo_descrip">BOOTSTRAP 5</p>
+                        <p class="aboutMe__skills__logo__description">BOOTSTRAP</p>
                     </span>
-                    <span class="aboutme__skills_logo">
+                    <span class="aboutMe__skills__logo">
                         <img src="./asetts/angular_logo.png">
-                        <p class="aboutme__skills_logo_descrip">ANGULAR</p>
+                        <p class="aboutMe__skills__logo__description">ANGULAR</p>
                     </span>
-                    <span class="aboutme__skills_logo">
+                    <span class="aboutMe__skills__logo">
                         <img src="./asetts/git_logo.png">
-                        <p class="aboutme__skills_logo_descrip">GIT</p>
+                        <p class="aboutMe__skills__logo__description">GIT</p>
                     </span>
                 </div>
             </div>
@@ -119,7 +121,7 @@
     </section>
     <!-- END ABOUT ME -->
     <!-- START PROJECTS -->
-    <div class="container bg-danger my-4"  id="projects" >
+    <div class="container bg-danger my-4" id="projects">
         <div class="triangulo">
 
         </div>
@@ -129,27 +131,28 @@
         <div class="triangulo">
 
         </div>
-        
+
 
     </div>
     <div class="ejemplo">
-        
+
     </div>
     <!-- ENDS PROJECTS -->
 
     <!-- START FOOTER -->
     <footer class="footer">
-            <div class="footer__info">
-                <p>Seguime en mis redes.</p>
-            </div>
-            <div class="footer__social">
-                <span class="footer__social__logo">
-                    <a href="https://www.linkedin.com/in/jorge-n-mendez/" target="blank"><i class="fab fa-linkedin"></i></a>
-                </span>
-                <span class="footer__social__logo">
-                    <a href="https://www.instagram.com/jorgem_088/?hl=es-la" target="blank"><i class="fab fa-instagram"></i></a>
-                </span>
-            </div>
+        <div class="footer__info">
+            <p>Puedes contactarme en mis redes.</p>
+        </div>
+        <div class="footer__social">
+            <span class="footer__social__logo">
+                <a href="https://www.linkedin.com/in/jorge-n-mendez/" target="blank"><i class="fab fa-linkedin"></i></a>
+            </span>
+            <span class="footer__social__logo">
+                <a href="https://www.instagram.com/jorgem_088/?hl=es-la" target="blank"><i
+                        class="fab fa-instagram"></i></a>
+            </span>
+        </div>
     </footer>
 
     <!-- ENDS FOOTER -->

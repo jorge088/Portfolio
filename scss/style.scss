@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background: linear-gradient(180deg, rgba(42,42,43,1) 13%, rgba(63,63,66,1) 27%, rgba(63,63,66,1) 49%, rgba(42,42,43,1) 82%);
+
+}
+/* ---------------NAV------------------- */
+.header{
+    position: sticky;
+    padding: .3em;
+    top: 0;
+    z-index: 30;
+    background-color: #4D5050;
+    font-size: 16px;
+    margin: 0;
+    &__nav{
+        padding: 0 2em;
+        &__button{
+            margin-left: auto;
+            &:focus{
+                color: transparent;
+            }
+        }
+        &__list{
+            margin-left: auto;
+            &__item{
+                margin-right: 1em;
+            }
+            & a{
+                color: #FFF;
+                font-weight: 600;
+                font-family: 'Nanum Gothic', sans-serif;
+                font-size: 1.1em;
+                transition: 0.5s;
+                &:hover{
+                    color: #FFF;
+                    text-shadow: 1px 0 0 #FFF;
+                }
+                &:focus{
+                    color: #FFF;
+                }
+            }
+        }
+    }
+    
+}
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.custom-toggler.navbar-toggler {
+    border:  2px solid #FFF;
+}
+
+/*----------------END NAV----------------- */
+
+/* ---------------PRESENTATION-------------------- */
+.presentation{
+    margin: 7.5em auto;
+    font-size: 16px;
+    &__description{
+        display: flex;
+        flex-direction: column;
+        margin: auto 0;
+        color:#fff;
+        &__title{
+            font-family: 'Nanum Gothic', sans-serif;
+            text-align: center;
+            & p{
+                font-size: 2em;
+            }
+            & h1{
+                font-size: 4.5em;
+                font-family: 'Bree Serif', serif;
+            }
+        }
+        &__subTitle{
+            margin: .4em 0;
+            margin-left: auto;
+            color: rgb(236, 230, 230);
+            & h2{
+                font-family: 'Nanum Gothic', sans-serif;
+                font-size: 1.1em;
+            }
+        }
+    }
+    &__img {
+        height: 24em;
+        text-align: center;
+        margin: auto 0;
+        & img{ 
+            height: 100%;
+            border-radius: 30px;
+            padding: 1em;
+            transition: 1s ease all;
+            &:hover {
+                filter: drop-shadow(1px 1px 7px #dad6d6);
+
+            }
+        }
+    }
+}
+/*----------------END PRESENTATION----------------- */
+
+
+/* ---------------ABOUT ME-------------------- */
+.aboutMe{
+    font-size: 16px;
+    margin: 2em auto;
+    &__title{
+        font-size: 2em;
+        font-family: 'Nanum Gothic', sans-serif;
+        text-align: center;
+        color: #FFF;
+        
+    }
+    &__text{
+        font-family: 'Nanum Gothic', sans-serif;
+        font-style: oblique;
+        font-size: 1.3em;
+        text-align:justify;
+        color: #FFF;
+    }
+    &__skills{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 1em;
+        gap: 1.5em;
+        &__logo{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            & img{
+                width: 6em;
+                transition: 1.7s ease all;
+                &:hover{
+                    transform: rotate(360deg);
+                    filter: drop-shadow(1px 1px 4px #dad6d6);
+                    cursor: pointer;
+                }
+            }
+            &__description{
+                font-family: 'Nanum Gothic', sans-serif;
+                font-style: oblique;
+                font-size: 0.85em;
+                text-align:center;
+                color: #fff;
+                font-weight: 600;
+            }
+        }
+    }
+    
+}
+
+/* ---------------END ABOUT ME-------------------- */
+
+/* FOOTER */
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #4D5050;
+    padding: .4em 0;
+    font-size: 16px;
+    &__info p{
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 1.4em; 
+        color:#DCD8D8;
+        margin: 0;
+    }
+    &__social{
+        flex-direction: row;
+        &__logo a i{
+            margin: .1em .4em;
+            font-size: 2.5em;
+            color: #DCD8D8;
+            &:hover{
+                filter: drop-shadow(1px 0px  #DCD8D8);
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:575px) {
+    .presentation{
+        font-size: 15px;
+        margin: 3em 0;
+        &__description{
+            
+            &__title{
+                & p{
+                    font-size: 1.7em;
+                }
+                & h1{
+                    font-size: 3.5em;
+                }
+            }
+            &__subTitle{
+                margin: .1em auto;
+                & h2{
+                    
+                    font-size: 1.2em;
+                    text-align: center;
+                }
+            }
+        }
+        &__img {
+            height: 22em;   
+        }
+    }
+    .aboutMe{
+        font-size: 14px;
+        &__title{
+            margin-top: .4em;
+        }
+        &__text{
+            padding: 0 .5em;
+        }
+        &__skills{
+            grid-template-columns: 1fr 1fr ;
+            &__logo{
+                & img{
+                    width: 7em;  
+                }
+                &__description{
+                    font-size: 0.95em;
+                }
+            }
+        }
+    }
+    .footer{
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width:576px) and (max-width:767px) {
+    .presentation{
+        font-size: 16px;
+        margin: 3em 0;
+        &__img {
+            height: 22em;   
+        }
+    }
+    .aboutMe{
+        font-size: 15px;
+        &__title{
+            margin-top: .4em;
+        }
+        &__skills{
+            &__logo{
+                & img{
+                    width: 7em;  
+                }
+                &__description{
+                    font-size: 0.95em;
+                }
+            }
+        }
+    }
+    .footer{
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:992px) {
+    .presentation{
+        font-size: 15px;
+        &__img {
+            height: 20em;   
+        }
+    }
+    .aboutMe{
+        font-size: 15px;
+        &__title{
+            margin-top: .4em;
+        }
+        &__skills{
+            &__logo{
+                & img{
+                    width: 7em;  
+                }
+                &__description{
+                    font-size: 0.95em;
+                }
+            }
+        }
+    }
+    .footer{
+        font-size: 15px;
+    }
+}

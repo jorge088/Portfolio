@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(180deg, #2a2a2b 13%, #3f3f42 27%, #3f3f42 49%, #2a2a2b 82%);
+}
+
+/* ---------------NAV------------------- */
+.header {
+  position: sticky;
+  padding: 0.3em;
+  top: 0;
+  z-index: 30;
+  background-color: #4D5050;
+  font-size: 16px;
+  margin: 0;
+}
+.header__nav {
+  padding: 0 2em;
+}
+.header__nav__button {
+  margin-left: auto;
+}
+.header__nav__button:focus {
+  color: transparent;
+}
+.header__nav__list {
+  margin-left: auto;
+}
+.header__nav__list__item {
+  margin-right: 1em;
+}
+.header__nav__list a {
+  color: #FFF;
+  font-weight: 600;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 1.1em;
+  transition: 0.5s;
+}
+.header__nav__list a:hover {
+  color: #FFF;
+  text-shadow: 1px 0 0 #FFF;
+}
+.header__nav__list a:focus {
+  color: #FFF;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border: 2px solid #FFF;
+}
+
+/*----------------END NAV----------------- */
+/* ---------------PRESENTATION-------------------- */
+.presentation {
+  margin: 7.5em auto;
+  font-size: 16px;
+}
+.presentation__description {
+  display: flex;
+  flex-direction: column;
+  margin: auto 0;
+  color: #fff;
+}
+.presentation__description__title {
+  font-family: "Nanum Gothic", sans-serif;
+  text-align: center;
+}
+.presentation__description__title p {
+  font-size: 2em;
+}
+.presentation__description__title h1 {
+  font-size: 4.5em;
+  font-family: "Bree Serif", serif;
+}
+.presentation__description__subTitle {
+  margin: 0.4em 0;
+  margin-left: auto;
+  color: #ece6e6;
+}
+.presentation__description__subTitle h2 {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 1.1em;
+}
+.presentation__img {
+  height: 24em;
+  text-align: center;
+  margin: auto 0;
+}
+.presentation__img img {
+  height: 100%;
+  border-radius: 30px;
+  padding: 1em;
+  transition: 1s ease all;
+}
+.presentation__img img:hover {
+  filter: drop-shadow(1px 1px 7px #dad6d6);
+}
+
+/*----------------END PRESENTATION----------------- */
+/* ---------------ABOUT ME-------------------- */
+.aboutMe {
+  font-size: 16px;
+  margin: 2em auto;
+}
+.aboutMe__title {
+  font-size: 2em;
+  font-family: "Nanum Gothic", sans-serif;
+  text-align: center;
+  color: #FFF;
+}
+.aboutMe__text {
+  font-family: "Nanum Gothic", sans-serif;
+  font-style: oblique;
+  font-size: 1.3em;
+  text-align: justify;
+  color: #FFF;
+}
+.aboutMe__skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 1em;
+  gap: 1.5em;
+}
+.aboutMe__skills__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aboutMe__skills__logo img {
+  width: 6em;
+  transition: 1.7s ease all;
+}
+.aboutMe__skills__logo img:hover {
+  transform: rotate(360deg);
+  filter: drop-shadow(1px 1px 4px #dad6d6);
+  cursor: pointer;
+}
+.aboutMe__skills__logo__description {
+  font-family: "Nanum Gothic", sans-serif;
+  font-style: oblique;
+  font-size: 0.85em;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* ---------------END ABOUT ME-------------------- */
+/* FOOTER */
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #4D5050;
+  padding: 0.4em 0;
+  font-size: 16px;
+}
+.footer__info p {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 1.4em;
+  color: #DCD8D8;
+  margin: 0;
+}
+.footer__social {
+  flex-direction: row;
+}
+.footer__social__logo a i {
+  margin: 0.1em 0.4em;
+  font-size: 2.5em;
+  color: #DCD8D8;
+}
+.footer__social__logo a i:hover {
+  filter: drop-shadow(1px 0px #DCD8D8);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 575px) {
+  .presentation {
+    font-size: 15px;
+    margin: 3em 0;
+  }
+  .presentation__description__title p {
+    font-size: 1.7em;
+  }
+  .presentation__description__title h1 {
+    font-size: 3.5em;
+  }
+  .presentation__description__subTitle {
+    margin: 0.1em auto;
+  }
+  .presentation__description__subTitle h2 {
+    font-size: 1.2em;
+    text-align: center;
+  }
+  .presentation__img {
+    height: 22em;
+  }
+
+  .aboutMe {
+    font-size: 14px;
+  }
+  .aboutMe__title {
+    margin-top: 0.4em;
+  }
+  .aboutMe__text {
+    padding: 0 0.5em;
+  }
+  .aboutMe__skills {
+    grid-template-columns: 1fr 1fr;
+  }
+  .aboutMe__skills__logo img {
+    width: 7em;
+  }
+  .aboutMe__skills__logo__description {
+    font-size: 0.95em;
+  }
+
+  .footer {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .presentation {
+    font-size: 16px;
+    margin: 3em 0;
+  }
+  .presentation__img {
+    height: 22em;
+  }
+
+  .aboutMe {
+    font-size: 15px;
+  }
+  .aboutMe__title {
+    margin-top: 0.4em;
+  }
+  .aboutMe__skills__logo img {
+    width: 7em;
+  }
+  .aboutMe__skills__logo__description {
+    font-size: 0.95em;
+  }
+
+  .footer {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .presentation {
+    font-size: 15px;
+  }
+  .presentation__img {
+    height: 20em;
+  }
+
+  .aboutMe {
+    font-size: 15px;
+  }
+  .aboutMe__title {
+    margin-top: 0.4em;
+  }
+  .aboutMe__skills__logo img {
+    width: 7em;
+  }
+  .aboutMe__skills__logo__description {
+    font-size: 0.95em;
+  }
+
+  .footer {
+    font-size: 15px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
