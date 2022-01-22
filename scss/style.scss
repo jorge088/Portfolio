@@ -22,14 +22,20 @@ html{
     padding: 0 80px;
 }
 /* ---------------NAV------------------- */
+header.abajo{
+    padding: .6em .3em;
+    background-color: #e08f15;
+
+}
 .header{
     position: sticky;
     padding: .3em;
     top: 0;
     z-index: 30;
-    background-color: #e08f15;
+    background-color: #4D5050;
     font-size: 16px;
     margin: 0;
+    transition: .5s ease all;
     &__nav{
         padding: 0 2em;
         &__button{
@@ -157,6 +163,7 @@ html{
                 align-items: center;
                 & img{
                     width: 100%;
+                    height: auto;
                     transition: 1.7s ease all;
                     &:hover{
                         transform: rotate(360deg);

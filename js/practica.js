@@ -19,6 +19,10 @@ const typed =new Typed('.typed' , {
     loop:true
 });
 
+window.addEventListener("scroll",function(){
+    var header = document.querySelector("header");
+    header.classList.toggle("abajo" , window.scrollY>100);
+});
 
 var prese = document.createElement("p");
 var texto = document.createTextNode("NUEVO TEXTO");
