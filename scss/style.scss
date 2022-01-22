@@ -180,9 +180,35 @@ html{
 }
 
 /* ---------------END ABOUT ME-------------------- */
+.sectionTitle{
+    margin: 0;
+    text-align: center;
+    padding-top: 3em ;
+    color: #FFF;
 
+}
 .projects{
-    min-height: 100vh;
+    font-size: 16px;
+    color: #FFF;
+    padding: 2em 0;
+    &__item{
+        margin: 2em 0;
+        &__image{
+            background: url(../asetts/portfolio.png);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 22em;
+
+        }
+        &__description{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 1em;
+        }
+    }
 }
 
 /* FOOTER */
