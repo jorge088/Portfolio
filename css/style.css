@@ -13,8 +13,26 @@ html {
   transition: 0.5s all;
 }
 
+.animado2 {
+  opacity: 0;
+  transition: 0.5s all;
+}
+
+.animado3 {
+  opacity: 0;
+  transition: 0.5s all;
+}
+
 .mostrarDerecha {
   animation: mostrarDerecha 1s;
+}
+
+.mostrarArriba {
+  animation: mostrarArriba 1s;
+}
+
+.mostrarAbajo {
+  animation: mostrarAbajo 1s;
 }
 
 @keyframes mostrarDerecha {
@@ -23,6 +41,22 @@ html {
   }
   100% {
     transform: translateX(0);
+  }
+}
+@keyframes mostrarArriba {
+  0% {
+    transform: translateY(80px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes mostrarAbajo {
+  0% {
+    transform: translateY(-80px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 .container-presentation {
