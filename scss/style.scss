@@ -6,7 +6,21 @@
 html{
     scroll-behavior:smooth;
 }
-
+.animado{
+    opacity: 0;
+    transition: .5s all;
+}
+.mostrarDerecha{
+    animation: mostrarDerecha 1s;
+}
+@keyframes mostrarDerecha {
+    0%{
+        transform: translateX(-80px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
 .container{
     &-presentation{
         background: linear-gradient(180deg, #2a2a2b 15%, rgba(63,63,66,1) 35%, rgba(63,63,66,1) 45%, rgba(42,42,43,1) 100%);
@@ -22,22 +36,19 @@ html{
     padding: 0 80px;
 }
 /* ---------------NAV------------------- */
-header.abajo{
-    padding: .6em .3em;
-    background-color: #e08f15;
-
-}
 .header{
     position: sticky;
-    padding: .3em;
     top: 0;
     z-index: 30;
     background-color: #4D5050;
     font-size: 16px;
     margin: 0;
     transition: .5s ease all;
+    &.abajo{
+        background-color: #e08f15;
+    }
     &__nav{
-        padding: 0 2em;
+        padding: .3em 2em;
         &__button{
             margin-left: auto;
             &:focus{

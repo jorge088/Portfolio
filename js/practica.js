@@ -1,13 +1,4 @@
-// function escribir(){
-//     for(let i=0 ;i<=10;i++){
-//         document.write("<h1 style='color:red';> HOLA MUNDO</h2>");
-//         if(i==5){
-//             break;
-//         }
-//     }
-// }
-// escribir();
-
+//Presentacion - efecto maquina de escribir
 const typed =new Typed('.typed' , {
     // strings :['Bienvenido','Bienvenida'],
     stringsElement:'#welcome',
@@ -18,18 +9,20 @@ const typed =new Typed('.typed' , {
     backDelay:1000,
     loop:true
 });
-
+//Header - Efecto de cambio de color
 window.addEventListener("scroll",function(){
-    var header = document.querySelector("header");
+    let header = document.querySelector("header");
     header.classList.toggle("abajo" , window.scrollY>100);
 });
 
-var prese = document.createElement("p");
-var texto = document.createTextNode("NUEVO TEXTO");
-prese.appendChild(texto);
-prese.setAttribute("style","color:red;font-size:40px;text-align:center;")
-
-var padre = document.getElementById('presentacion').parentNode;
-padre.appendChild(prese);
-document.write(prese.innerHTML);
-console.log(prese.innerHTML);
+let animado=document.querySelectorAll(".animado");
+window.addEventListener('scroll',function(){
+    let scrollTop = document.documentElement.scrollTop;
+    for(let i=0;i<animado.length;i++){
+        let alturaAnimado = animado[i].offsetTop;
+        if(alturaAnimado - 450 < scrollTop){
+            animado[i].style.opacity = 1;
+            animado[i].classList.add("mostrarDerecha")
+        }
+    }
+});

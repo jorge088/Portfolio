@@ -8,6 +8,23 @@ html {
   scroll-behavior: smooth;
 }
 
+.animado {
+  opacity: 0;
+  transition: 0.5s all;
+}
+
+.mostrarDerecha {
+  animation: mostrarDerecha 1s;
+}
+
+@keyframes mostrarDerecha {
+  0% {
+    transform: translateX(-80px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 .container-presentation {
   background: linear-gradient(180deg, #2a2a2b 15%, #3f3f42 35%, #3f3f42 45%, #2a2a2b 100%);
 }
@@ -23,14 +40,8 @@ html {
 }
 
 /* ---------------NAV------------------- */
-header.abajo {
-  padding: 0.6em 0.3em;
-  background-color: #e08f15;
-}
-
 .header {
   position: sticky;
-  padding: 0.3em;
   top: 0;
   z-index: 30;
   background-color: #4D5050;
@@ -38,8 +49,11 @@ header.abajo {
   margin: 0;
   transition: 0.5s ease all;
 }
+.header.abajo {
+  background-color: #e08f15;
+}
 .header__nav {
-  padding: 0 2em;
+  padding: 0.3em 2em;
 }
 .header__nav__button {
   margin-left: auto;
