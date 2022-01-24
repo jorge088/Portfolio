@@ -76,6 +76,7 @@ html {
 
 #welcome {
   display: none;
+  opacity: 0;
 }
 
 /* ---------------NAV------------------- */
