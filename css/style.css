@@ -71,6 +71,7 @@ html {
 
 .max-width {
   padding: 0 80px;
+  margin: 0;
 }
 
 /* ---------------NAV------------------- */
@@ -264,6 +265,31 @@ html {
   justify-content: center;
   padding: 1em;
 }
+.projects__item__description__title {
+  font-size: 2em;
+  font-family: "Ubuntu", sans-serif;
+  margin-top: 1em;
+}
+.projects__item__description__comment {
+  font-family: "Nanum Gothic", sans-serif;
+  font-style: oblique;
+  font-size: 1.1em;
+  text-align: center;
+}
+.projects__item__description__button {
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+  color: #ffa724;
+  font-size: 1.2em;
+  padding: 0.3em 2.5em;
+  border: 2px solid #e08f15;
+  border-radius: 20px;
+  transition: 0.5s ease all;
+}
+.projects__item__description__button:hover {
+  color: #FFF;
+  background-color: #e08f15;
+}
 
 /* FOOTER */
 .footer {
@@ -340,6 +366,18 @@ html {
   }
   .aboutMe__skills__container__logo__description {
     font-size: 0.95em;
+  }
+
+  .projects {
+    font-size: 14px;
+  }
+  .projects__item {
+    margin: 0;
+  }
+  .projects__item__image {
+    background-position: bottom;
+    height: 18em;
+    padding: 0;
   }
 
   .footer {
