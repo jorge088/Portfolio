@@ -90,6 +90,16 @@ html {
 .header__nav {
   padding: 0.3em 2em;
 }
+.header__nav__title {
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.7em;
+}
+.header__nav__title:hover {
+  color: #FFF;
+}
 .header__nav__button {
   margin-left: auto;
 }
@@ -276,7 +286,12 @@ html {
   font-size: 1.1em;
   text-align: center;
 }
-.projects__item__description__button {
+.projects__item__description__container {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.projects__item__description__container__button {
   text-decoration: none;
   font-family: "Ubuntu", sans-serif;
   color: #ffa724;
@@ -286,7 +301,7 @@ html {
   border-radius: 20px;
   transition: 0.5s ease all;
 }
-.projects__item__description__button:hover {
+.projects__item__description__container__button:hover {
   color: #FFF;
   background-color: #e08f15;
 }
