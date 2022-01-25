@@ -254,11 +254,20 @@ html{
     &__item{
         margin: 2em 0;
         &__image{
-            background: url(../asetts/portfolio.png);
-            background-size: contain;
-            background-position: center;
-            background-repeat: no-repeat;
+            
             height: 22em;
+            &.primero{
+                background: url(../asetts/portfolio.png);
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            &.segundo{
+                background: url(../asetts/simonDice.jpeg);
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
 
         }
         &__description{

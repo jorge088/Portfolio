@@ -267,11 +267,19 @@ html {
   margin: 2em 0;
 }
 .projects__item__image {
+  height: 22em;
+}
+.projects__item__image.primero {
   background: url(../asetts/portfolio.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  height: 22em;
+}
+.projects__item__image.segundo {
+  background: url(../asetts/simonDice.jpeg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .projects__item__description {
   display: flex;
