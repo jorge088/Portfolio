@@ -202,13 +202,14 @@ html {
   color: #FFF;
 }
 .aboutMe__title {
-  font-size: 2em;
+  font-size: 1.8em;
   font-family: "Ubuntu", sans-serif;
   text-align: center;
   margin-top: 1em;
 }
 .aboutMe__text {
   font-family: "Nanum Gothic", sans-serif;
+  text-align: center;
   font-style: oblique;
   font-size: 1.3em;
   text-align: justify;
