@@ -270,14 +270,20 @@ html {
 .projects__item__image {
   height: 22em;
 }
-.projects__item__image.primero {
-  background: url(../asetts/portfolio.png);
+.projects__item__image.portfolio {
+  background: url("../asetts/portfolio.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
-.projects__item__image.segundo {
-  background: url(../asetts/simonDice.jpeg);
+.projects__item__image.simonDice {
+  background: url("../asetts/simonDice.jpeg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.projects__item__image.utilitiesApp {
+  background: url("../asetts/utilitiesApp.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -287,7 +293,7 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1em;
+  padding: 1em 2em;
 }
 .projects__item__description__title {
   font-size: 2em;
@@ -407,6 +413,9 @@ html {
     background-position: bottom;
     height: 18em;
     padding: 0;
+  }
+  .projects__item__description {
+    padding: 1em;
   }
 
   .footer {
