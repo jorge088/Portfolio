@@ -1,11 +1,132 @@
+.header {
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  height: 70px;
+  font-size: 1rem;
+  z-index: 100;
+  background-color: #e08f15;
+  color: #fff;
+}
+.header__nav {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.header__nav__logo {
+  font-size: 1.6em;
+}
+.header__nav__categorys {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+.header__nav__categorys li {
+  margin: 0;
+  padding: 0;
+}
+.header__nav__categorys li a {
+  text-decoration: none;
+  padding: 0.5em 1.2em;
+  border-radius: 8px;
+  transition: 0.4s ease all;
+}
+.header__nav__categorys li a:hover {
+  background-color: #e49c31;
+}
+.header__nav__btnCategorysResponsive {
+  background: none;
+  border: none;
+  font-size: 1.6em;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 0.05em 0.4em;
+  display: none;
+}
+.header__nav__btnCategorysResponsive:focus {
+  border: 2px solid #fff;
+}
+
+@media only screen and (max-width: 575px) {
+  .header {
+    font-size: 0.9rem;
+  }
+  .header__nav__categorys {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: -10vw;
+    width: 100vw;
+    background-color: #e08f15;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__nav__categorys li a {
+    display: block;
+    width: 100vw;
+    text-align: center;
+    padding: 0.8em 0;
+    border-top: 1px solid #ebb360;
+  }
+  .header__nav__categorys.show {
+    display: block;
+  }
+  .header__nav__btnCategorysResponsive {
+    display: block;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .header {
+    font-size: 0.9rem;
+  }
+  .header__nav__categorys {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: -10vw;
+    width: 100vw;
+    background-color: #e08f15;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__nav__categorys li a {
+    display: block;
+    width: 100vw;
+    text-align: center;
+    padding: 0.8em 0;
+    border-top: 1px solid #ebb360;
+  }
+  .header__nav__categorys.show {
+    display: block;
+  }
+  .header__nav__btnCategorysResponsive {
+    display: block;
+  }
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+* a {
+  text-decoration: none;
+  color: #fff;
+}
+* a:hover {
+  color: #fff;
+}
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  background-color: #393E41;
 }
 
 .animado {
@@ -59,16 +180,6 @@ html {
     transform: translateY(0);
   }
 }
-.container-presentation {
-  background: linear-gradient(180deg, #2a2a2b 15%, #3f3f42 35%, #3f3f42 45%, #2a2a2b 100%);
-}
-.container-aboutMe {
-  background: #111;
-}
-.container-projects {
-  background: linear-gradient(180deg, #2a2a2b 15%, #3f3f42 35%, #3f3f42 45%, #2a2a2b 100%);
-}
-
 .max-width {
   padding: 0 80px;
   margin: 0;
@@ -79,67 +190,6 @@ html {
   opacity: 0;
 }
 
-/* ---------------NAV------------------- */
-.header {
-  position: sticky;
-  top: 0;
-  z-index: 30;
-  background-color: #4D5050;
-  font-size: 16px;
-  margin: 0;
-  transition: 0.5s ease all;
-}
-.header.abajo {
-  background-color: #e08f15;
-}
-.header__nav {
-  padding: 0.3em 2em;
-}
-.header__nav__title {
-  text-decoration: none;
-  font-family: "Ubuntu", sans-serif;
-  color: #fff;
-  font-weight: 500;
-  font-size: 1.7em;
-}
-.header__nav__title:hover {
-  color: #FFF;
-}
-.header__nav__button {
-  margin-left: auto;
-}
-.header__nav__button:focus {
-  color: transparent;
-}
-.header__nav__list {
-  margin-left: auto;
-}
-.header__nav__list__item {
-  margin-right: 1em;
-}
-.header__nav__list a {
-  font-family: "Ubuntu", sans-serif;
-  font-size: 1.1em;
-  color: #FFF;
-  transition: 0.5s ease all;
-}
-.header__nav__list a:hover {
-  color: #FFF;
-  text-shadow: 1px 0 0 #FFF;
-}
-.header__nav__list a:focus {
-  color: #FFF;
-}
-
-.custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-
-.custom-toggler.navbar-toggler {
-  border: 2px solid #FFF;
-}
-
-/*----------------END NAV----------------- */
 /* ---------------PRESENTATION-------------------- */
 .presentation {
   min-height: 100vh;
@@ -150,7 +200,7 @@ html {
   display: flex;
   flex-direction: column;
   margin: auto 0;
-  color: #fff;
+  color: #007fff;
 }
 .presentation__description__title {
   font-family: "Ubuntu", sans-serif;
@@ -173,6 +223,7 @@ html {
   margin: 0.4em 0;
   margin-left: auto;
   color: #ece6e6;
+  color: #007fff;
 }
 .presentation__description__subTitle h2 {
   font-family: "Nanum Gothic", sans-serif;

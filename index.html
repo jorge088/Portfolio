@@ -11,48 +11,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
     <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="./css/all.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/9eb45967b7.js"></script>
     <link href="./css/style.css" rel="stylesheet">
 
     <title>Jorge Mendez</title>
 </head>
 
 <body>
-    <!-- NAVBAR -->
-    <header class="max-width header">
-        <div class="row">
-            <nav class="navbar navbar-expand-sm  header__nav ">
-                <a class="header__nav__title" href="#">Jorge</a>
-                <button class="navbar-toggler custom-toggler header__nav__button" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav header__nav__list">
-                        <li class="nav-item header__nav__list__item ">
-                            <a class="nav-link " href="#">Inicio <i class="fas fa-home"></i></a>
-                        </li>
-                        <li class="nav-item header__nav__list__item">
-                            <a class="nav-link" href="#about-me">Sobre mi</a>
-                        </li>
-                        <li class="nav-item header__nav__list__item">
-                            <a class="nav-link" href="#projects">Proyectos</a>
-                        </li>
-                        <li class="nav-item header__nav__list__item">
-                            <a class="nav-link" target="blank" href="https://drive.google.com/file/d/1cwHfeQamY1t3eq_qf9TklWH0CF4cU7u5/view?usp=sharing">CV <i
-                                    class="fas fa-download"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-        
+    <header class="header">
+        <nav class="header__nav">
+            <a href="#" class="header__nav__logo">Jorge</a>
+            <ul class="header__nav__categorys">
+                <li>
+                    <a href="#main" id="navLinkMain">INICIO</a>
+                </li>
+                <li>
+                    <a href="#aboutMe" id="navLinkAboutMe">SOBRE MI</a>
+                </li>
+                <li>
+                    <a href="#projects" id="navLinkProjects">PROYECTOS</a>
+                </li>
+                <li>
+                    <a target="blank" href="https://drive.google.com/file/d/1cwHfeQamY1t3eq_qf9TklWH0CF4cU7u5/view?usp=sharing">CV <i
+                        class="fas fa-download"></i></a>
+                </li>
+            </ul>
+            <button class="header__nav__btnCategorysResponsive"><i class="fa-solid fa-bars"></i></button>
+        </nav>
     </header>
-    <!-- END NAV -->
 
     <!-- PRESENTATION -->
     <main id="main" class="max-width container-presentation">
-        <div id="presentation" class="row presentation">
+        <div class="row presentation">
             <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 presentation__description">
                 <div class="presentation__description__title">
                     <p><span class="typed"></span>! Me llamo</p>
@@ -75,7 +66,7 @@
     <!-- END PRESENTATION -->
 
     <!-- START ABOUT ME -->
-    <section class="max-width container-aboutMe " id="about-me">
+    <section class="max-width container-aboutMe " id="aboutMe">
         <div class="row aboutMe">
             <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 aboutMe__information">
                 <div class="row">
@@ -221,6 +212,7 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script type="text/javascript" src="./js/popper.min.js"></script>
     <script src="./js/practica.js"></script>
+    <script src="./js/script.js"></script>
 
 </body>
 

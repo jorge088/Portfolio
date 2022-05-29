@@ -1,0 +1,120 @@
+.header {
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    height: 70px;
+    font-size: 1rem;
+    z-index: 100;
+    background-color: #e08f15;
+    color: #fff;
+
+    &__nav {
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        &__logo{
+            font-size: 1.6em;
+        }
+        &__categorys {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            list-style: none;
+            & li {
+                margin: 0;
+                padding: 0;
+                & a{
+                    
+                    text-decoration: none;
+                    padding: .5em 1.2em;
+                    border-radius: 8px;
+                    transition: .4s ease all;
+                    &:hover{
+                        background-color: #e49c31;
+                    }
+                }
+            }
+        }
+
+        &__btnCategorysResponsive {
+            background: none;
+            border: none;
+            font-size: 1.6em;
+            color: #fff;
+            border: 1px solid #fff;
+            padding: .05em .4em;
+            display: none;
+            &:focus{
+                border: 2px solid #fff;
+            }
+        }
+    }
+}
+@media only screen and (max-width:575px){
+    .header{
+        font-size: .9rem;
+        &__nav{
+            &__categorys{
+                display: none;
+                position: absolute;
+                top: 70px;
+                right: -10vw;
+                width: 100vw;
+                background-color: #e08f15;
+                flex-direction: column;
+                align-items: center;
+                & li{
+                    & a{
+                        display: block;
+                        width: 100vw;
+                        text-align: center;
+                        padding: .8em 0;
+                        border-top: 1px solid #ebb360;
+                    }
+                }
+                &.show{
+                    display: block;
+                }
+            }
+            &__btnCategorysResponsive{
+                display: block;
+            }
+        }
+    }
+}
+@media only screen and (min-width:576px) and (max-width:768px) {
+    .header{
+        font-size: .9rem;
+        &__nav{
+            &__categorys{
+                display: none;
+                position: absolute;
+                top: 70px;
+                right: -10vw;
+                width: 100vw;
+                background-color: #e08f15;
+                flex-direction: column;
+                align-items: center;
+                & li{
+                    & a{
+                        display: block;
+                        width: 100vw;
+                        text-align: center;
+                        padding: .8em 0;
+                        border-top: 1px solid #ebb360;
+                    }
+                }
+                &.show{
+                    display: block;
+                }
+            }
+            &__btnCategorysResponsive{
+                display: block;
+            }
+        }
+    }
+}
