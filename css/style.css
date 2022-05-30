@@ -108,6 +108,142 @@
     display: block;
   }
 }
+main {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  width: 100vw;
+  min-height: calc(100vh - 70px);
+}
+main .presentation {
+  width: 90%;
+  height: 100%;
+  padding: 6em 0;
+  margin: 0 auto;
+  color: #e7e7e7;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+main .presentation__information {
+  margin-top: 4em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+main .presentation__information__titles p {
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+main .presentation__information__titles h1 {
+  font-size: 4.9em;
+  font-weight: 500;
+  letter-spacing: 4px;
+  margin: 0.1em 0;
+}
+main .presentation__information__titles__welcome {
+  font-weight: 600;
+  font-style: normal;
+  color: #ffa724;
+}
+main .presentation__information__subtitles h2 {
+  font-size: 1.3em;
+  font-weight: 400;
+  text-align: right;
+}
+main .presentation__img {
+  height: 400px;
+}
+main .presentation__img img {
+  height: 100%;
+  border-radius: 40px;
+  transition: 0.7s ease all;
+  padding: 1em;
+  cursor: pointer;
+}
+main .presentation__img img:hover {
+  filter: drop-shadow(1px 1px 5px #dad6d6);
+}
+
+#welcome {
+  display: none;
+  opacity: 0;
+}
+
+@media only screen and (max-width: 575px) {
+  main {
+    font-size: 0.85rem;
+  }
+  main .presentation {
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+  }
+  main .presentation__information {
+    margin-top: 0;
+    justify-content: center;
+    gap: 0.5em;
+  }
+  main .presentation__information__titles p {
+    font-size: 1.8em;
+    text-align: center;
+  }
+  main .presentation__information__titles h1 {
+    text-align: center;
+  }
+  main .presentation__img {
+    height: 380px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  main {
+    font-size: 0.95rem;
+  }
+  main .presentation {
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+  }
+  main .presentation__information {
+    margin-top: 0;
+    justify-content: center;
+    gap: 0.5em;
+  }
+  main .presentation__information__titles p {
+    font-size: 1.8em;
+    text-align: center;
+  }
+  main .presentation__information__titles h1 {
+    text-align: center;
+  }
+  main .presentation__img {
+    height: 380px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  main {
+    font-size: 0.9rem;
+  }
+  main .presentation {
+    width: 95%;
+    padding: 4em 0;
+    gap: 1em;
+  }
+  main .presentation__information__titles p {
+    font-size: 1.8em;
+    text-align: center;
+  }
+  main .presentation__information__titles h1 {
+    text-align: center;
+  }
+  main .presentation__img {
+    height: 380px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -119,6 +255,13 @@
 }
 * a:hover {
   color: #fff;
+}
+* p {
+  margin: 0;
+  padding: 0;
+}
+* h1 {
+  margin: 0;
 }
 
 html {
@@ -185,66 +328,6 @@ body {
   margin: 0;
 }
 
-#welcome {
-  display: none;
-  opacity: 0;
-}
-
-/* ---------------PRESENTATION-------------------- */
-.presentation {
-  min-height: 100vh;
-  margin: 0 auto;
-  font-size: 16px;
-}
-.presentation__description {
-  display: flex;
-  flex-direction: column;
-  margin: auto 0;
-  color: #007fff;
-}
-.presentation__description__title {
-  font-family: "Ubuntu", sans-serif;
-  text-align: center;
-}
-.presentation__description__title p {
-  font-size: 2em;
-  font-family: "Ubuntu", sans-serif;
-  text-align: center;
-}
-.presentation__description__title h1 {
-  font-size: 4.5em;
-}
-.presentation__description__title__welcome {
-  font-weight: 600;
-  font-style: normal;
-  color: #ffa724;
-}
-.presentation__description__subTitle {
-  margin: 0.4em 0;
-  margin-left: auto;
-  color: #ece6e6;
-  color: #007fff;
-}
-.presentation__description__subTitle h2 {
-  font-family: "Nanum Gothic", sans-serif;
-  font-size: 1.1em;
-}
-.presentation__img {
-  height: 24em;
-  text-align: center;
-  margin: auto 0;
-}
-.presentation__img img {
-  height: 100%;
-  border-radius: 30px;
-  padding: 1em;
-  transition: 1s ease all;
-}
-.presentation__img img:hover {
-  filter: drop-shadow(1px 1px 7px #dad6d6);
-}
-
-/*----------------END PRESENTATION----------------- */
 /* ---------------ABOUT ME-------------------- */
 .aboutMe {
   font-size: 16px;

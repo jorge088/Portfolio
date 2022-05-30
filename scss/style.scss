@@ -1,4 +1,6 @@
 @import 'header';
+@import 'main';
+
 * {
     margin: 0;
     padding: 0;
@@ -7,9 +9,19 @@
     a {
         text-decoration: none;
         color: #fff;
-        &:hover{
+
+        &:hover {
             color: #fff;
         }
+    }
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        margin: 0;
     }
 }
 
@@ -83,79 +95,6 @@ body {
     padding: 0 80px;
     margin: 0;
 }
-
-#welcome {
-    display: none;
-    opacity: 0;
-}
-
-
-
-/* ---------------PRESENTATION-------------------- */
-.presentation {
-    min-height: 100vh;
-    margin: 0 auto;
-    font-size: 16px;
-
-    &__description {
-        display: flex;
-        flex-direction: column;
-        margin: auto 0;
-        color: #007fff;
-
-        &__title {
-            font-family: 'Ubuntu', sans-serif;
-            text-align: center;
-
-            & p {
-                font-size: 2em;
-                font-family: 'Ubuntu', sans-serif;
-                text-align: center;
-            }
-
-            & h1 {
-                font-size: 4.5em;
-            }
-
-            &__welcome {
-                font-weight: 600;
-                font-style: normal;
-                color: #ffa724;
-            }
-        }
-
-        &__subTitle {
-            margin: .4em 0;
-            margin-left: auto;
-            color: rgb(236, 230, 230);
-            color: #007fff;
-
-            & h2 {
-                font-family: 'Nanum Gothic', sans-serif;
-                font-size: 1.1em;
-            }
-        }
-    }
-
-    &__img {
-        height: 24em;
-        text-align: center;
-        margin: auto 0;
-
-        & img {
-            height: 100%;
-            border-radius: 30px;
-            padding: 1em;
-            transition: 1s ease all;
-
-            &:hover {
-                filter: drop-shadow(1px 1px 7px #dad6d6);
-            }
-        }
-    }
-}
-
-/*----------------END PRESENTATION----------------- */
 
 
 /* ---------------ABOUT ME-------------------- */
