@@ -10,26 +10,33 @@ const navLinkAboutMe = document.querySelector('#navLinkAboutMe');
 const navLinkProjects = document.querySelector('#navLinkProjects');
 
 
-btnResponsiveNav.addEventListener('click', () =>{ 
+btnResponsiveNav.addEventListener('click', () => {
     navCategorys.classList.toggle('show');
 });
-navLinkMain.addEventListener('click',(e)=>{
+navLinkMain.addEventListener('click', (e) => {
     e.preventDefault()
     if (navCategorys.classList.contains('show')) navCategorys.classList.toggle('show')
-    scrollTo(0,mainSection.offsetTop - 60);
+    scrollTo(0, mainSection.offsetTop - 60);
 });
-navLinkAboutMe.addEventListener('click',(e)=>{
+navLinkAboutMe.addEventListener('click', (e) => {
     e.preventDefault()
     if (navCategorys.classList.contains('show')) navCategorys.classList.toggle('show')
-    scrollTo(0,aboutMeSection.offsetTop - 60);
+    scrollTo(0, aboutMeSection.offsetTop - 60);
 });
-navLinkProjects.addEventListener('click',(e)=>{
+navLinkProjects.addEventListener('click', (e) => {
     e.preventDefault()
     if (navCategorys.classList.contains('show')) navCategorys.classList.toggle('show')
-    scrollTo(0,projectsSection.offsetTop - 60);
+    scrollTo(0, projectsSection.offsetTop - 60);
 });
 //Header - Efecto de cambio de color
-window.addEventListener("scroll",function(){
+
+document.addEventListener('DOMContentLoaded', () => {
     let header = document.querySelector("header");
-    header.classList.toggle("down" , window.scrollY>60);
-});
+    if (this.window.innerWidth < 768) {
+        header.classList.add('responsive')
+    } else {
+        window.addEventListener("scroll", function () {
+            header.classList.toggle("down", window.scrollY > 60)
+        });
+    }
+})
