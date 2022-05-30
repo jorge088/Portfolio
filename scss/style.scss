@@ -1,5 +1,6 @@
 @import 'header';
 @import 'main';
+@import 'aboutMe';
 
 * {
     margin: 0;
@@ -97,73 +98,6 @@ body {
 }
 
 
-/* ---------------ABOUT ME-------------------- */
-.aboutMe {
-    font-size: 16px;
-    min-height: calc(100vh - 60px);
-    margin: 0 auto;
-    color: #FFF;
-
-    &__title {
-        font-size: 1.8em;
-        font-family: 'Ubuntu', sans-serif;
-        text-align: center;
-        margin-top: 1em;
-    }
-
-    &__text {
-        font-family: 'Nanum Gothic', sans-serif;
-        text-align: center;
-        font-style: oblique;
-        font-size: 1.3em;
-        text-align: justify;
-    }
-
-    &__information {
-        margin: auto 0;
-    }
-
-    &__skills {
-        margin: auto 0;
-
-        &__container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-            overflow: hidden;
-            padding: 1em;
-            gap: 1.5em;
-
-            &__logo {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-
-                & img {
-                    width: 100%;
-                    height: auto;
-                    transition: 1.7s ease all;
-
-                    &:hover {
-                        transform: rotate(360deg);
-                        filter: drop-shadow(1px 1px 4px #dad6d6);
-                        cursor: pointer;
-                    }
-                }
-
-                &__description {
-                    color: #ffa724;
-                    font-family: 'Ubuntu', sans-serif;
-                    font-style: oblique;
-                    font-size: 0.9em;
-                    text-align: center;
-                    font-weight: 400;
-                }
-            }
-        }
-    }
-}
-
-/* ---------------END ABOUT ME-------------------- */
 .sectionTitle {
     margin: 0;
     text-align: center;
