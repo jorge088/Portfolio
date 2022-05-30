@@ -16,15 +16,20 @@ btnResponsiveNav.addEventListener('click', () =>{
 navLinkMain.addEventListener('click',(e)=>{
     e.preventDefault()
     if (navCategorys.classList.contains('show')) navCategorys.classList.toggle('show')
-    scrollTo(0,mainSection.offsetTop - 70);
+    scrollTo(0,mainSection.offsetTop - 60);
 });
 navLinkAboutMe.addEventListener('click',(e)=>{
     e.preventDefault()
     if (navCategorys.classList.contains('show')) navCategorys.classList.toggle('show')
-    scrollTo(0,aboutMeSection.offsetTop - 70);
+    scrollTo(0,aboutMeSection.offsetTop - 60);
 });
 navLinkProjects.addEventListener('click',(e)=>{
     e.preventDefault()
     if (navCategorys.classList.contains('show')) navCategorys.classList.toggle('show')
-    scrollTo(0,projectsSection.offsetTop - 70);
+    scrollTo(0,projectsSection.offsetTop - 60);
+});
+//Header - Efecto de cambio de color
+window.addEventListener("scroll",function(){
+    let header = document.querySelector("header");
+    header.classList.toggle("down" , window.scrollY>60);
 });

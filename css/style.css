@@ -2,11 +2,12 @@
   position: sticky;
   top: 0;
   width: 100vw;
-  height: 70px;
+  height: 60px;
   font-size: 1rem;
   z-index: 100;
-  background-color: #e08f15;
+  background-color: transparent;
   color: #fff;
+  transition: 0.6s ease all;
 }
 .header__nav {
   width: 80%;
@@ -51,6 +52,9 @@
 .header__nav__btnCategorysResponsive:focus {
   border: 2px solid #fff;
 }
+.header.down {
+  background-color: #e08f15;
+}
 
 @media only screen and (max-width: 575px) {
   .header {
@@ -59,7 +63,7 @@
   .header__nav__categorys {
     display: none;
     position: absolute;
-    top: 70px;
+    top: 60px;
     right: -10vw;
     width: 100vw;
     background-color: #e08f15;
@@ -87,7 +91,7 @@
   .header__nav__categorys {
     display: none;
     position: absolute;
-    top: 70px;
+    top: 60px;
     right: -10vw;
     width: 100vw;
     background-color: #e08f15;
@@ -112,7 +116,7 @@ main {
   font-size: 1rem;
   font-family: "Roboto", sans-serif;
   width: 100vw;
-  min-height: calc(100vh - 70px);
+  min-height: calc(100vh - 60px);
 }
 main .presentation {
   width: 90%;
@@ -331,7 +335,7 @@ body {
 /* ---------------ABOUT ME-------------------- */
 .aboutMe {
   font-size: 16px;
-  min-height: 100vh;
+  min-height: calc(100vh - 60px);
   margin: 0 auto;
   color: #FFF;
 }
@@ -389,14 +393,14 @@ body {
 .sectionTitle {
   margin: 0;
   text-align: center;
-  padding-top: 3em;
+  padding-top: 1em;
   color: #FFF;
 }
 
 .projects {
   font-size: 16px;
+  min-height: calc(100vh - 60px);
   color: #FFF;
-  padding: 2em 0;
 }
 .projects__item {
   margin: 2em 0;

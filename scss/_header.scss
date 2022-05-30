@@ -2,11 +2,12 @@
     position: sticky;
     top: 0;
     width: 100vw;
-    height: 70px;
+    height: 60px;
     font-size: 1rem;
     z-index: 100;
-    background-color: #e08f15;
+    background-color: transparent;
     color: #fff;
+    transition: .6s ease all;
 
     &__nav {
         width: 80%;
@@ -53,6 +54,9 @@
             }
         }
     }
+    &.down{
+        background-color: #e08f15;
+    }
 }
 @media only screen and (max-width:575px){
     .header{
@@ -61,7 +65,7 @@
             &__categorys{
                 display: none;
                 position: absolute;
-                top: 70px;
+                top: 60px;
                 right: -10vw;
                 width: 100vw;
                 background-color: #e08f15;
@@ -93,7 +97,7 @@
             &__categorys{
                 display: none;
                 position: absolute;
-                top: 70px;
+                top: 60px;
                 right: -10vw;
                 width: 100vw;
                 background-color: #e08f15;
