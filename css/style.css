@@ -20,6 +20,7 @@
 }
 .header__nav__logo {
   font-size: 1.6em;
+  font-weight: 700;
 }
 .header__nav__categorys {
   margin: 0;
@@ -181,13 +182,14 @@ main .presentation__img img:hover {
 @media only screen and (max-width: 575px) {
   main {
     font-size: 0.85rem;
+    min-height: auto;
   }
   main .presentation {
     width: 90%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2em;
+    padding-top: 2em;
   }
   main .presentation__information {
     margin-top: 0;
@@ -208,13 +210,14 @@ main .presentation__img img:hover {
 @media only screen and (min-width: 576px) and (max-width: 768px) {
   main {
     font-size: 0.95rem;
+    min-height: auto;
   }
   main .presentation {
     width: 90%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2em;
+    padding-top: 2em;
   }
   main .presentation__information {
     margin-top: 0;
@@ -235,6 +238,7 @@ main .presentation__img img:hover {
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   main {
     font-size: 0.9rem;
+    min-height: auto;
   }
   main .presentation {
     width: 95%;
@@ -390,6 +394,73 @@ main .presentation__img img:hover {
     width: 120px;
   }
 }
+.projects {
+  font-size: 16px;
+  min-height: calc(100vh - 60px);
+  color: #FFF;
+}
+.projects__item {
+  margin: 2em 0;
+}
+.projects__item__image {
+  height: 22em;
+}
+.projects__item__image.sportshop {
+  background: url("../asetts/sportshop.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.projects__item__image.simonDice {
+  background: url("../asetts/simonDice.jpeg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.projects__item__image.utilitiesApp {
+  background: url("../asetts/utilitiesApp.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.projects__item__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1em 2em;
+}
+.projects__item__description__title {
+  font-size: 2em;
+  font-family: "Ubuntu", sans-serif;
+  margin-top: 1em;
+}
+.projects__item__description__comment {
+  font-family: "Nanum Gothic", sans-serif;
+  font-style: oblique;
+  font-size: 1.1em;
+  text-align: center;
+}
+.projects__item__description__container {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.projects__item__description__container__button {
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+  color: #ffa724;
+  font-size: 1.2em;
+  padding: 0.3em 2.5em;
+  border: 2px solid #e08f15;
+  border-radius: 20px;
+  transition: 0.5s ease all;
+}
+.projects__item__description__container__button:hover {
+  color: #FFF;
+  background-color: #e08f15;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -481,73 +552,6 @@ body {
   color: #FFF;
 }
 
-.projects {
-  font-size: 16px;
-  min-height: calc(100vh - 60px);
-  color: #FFF;
-}
-.projects__item {
-  margin: 2em 0;
-}
-.projects__item__image {
-  height: 22em;
-}
-.projects__item__image.sportshop {
-  background: url("../asetts/sportshop.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.projects__item__image.simonDice {
-  background: url("../asetts/simonDice.jpeg");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.projects__item__image.utilitiesApp {
-  background: url("../asetts/utilitiesApp.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.projects__item__description {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 1em 2em;
-}
-.projects__item__description__title {
-  font-size: 2em;
-  font-family: "Ubuntu", sans-serif;
-  margin-top: 1em;
-}
-.projects__item__description__comment {
-  font-family: "Nanum Gothic", sans-serif;
-  font-style: oblique;
-  font-size: 1.1em;
-  text-align: center;
-}
-.projects__item__description__container {
-  display: flex;
-  width: 100%;
-  justify-content: space-evenly;
-}
-.projects__item__description__container__button {
-  text-decoration: none;
-  font-family: "Ubuntu", sans-serif;
-  color: #ffa724;
-  font-size: 1.2em;
-  padding: 0.3em 2.5em;
-  border: 2px solid #e08f15;
-  border-radius: 20px;
-  transition: 0.5s ease all;
-}
-.projects__item__description__container__button:hover {
-  color: #FFF;
-  background-color: #e08f15;
-}
-
 /* FOOTER */
 .footer {
   width: 100%;
@@ -582,49 +586,6 @@ body {
     padding: 0 15px;
   }
 
-  .presentation {
-    font-size: 15px;
-    padding: 2em 0;
-    min-height: 50vh;
-  }
-  .presentation__description__title p {
-    font-size: 1.7em;
-  }
-  .presentation__description__title h1 {
-    font-size: 3.1em;
-  }
-  .presentation__description__subTitle {
-    margin: 0.2em auto;
-  }
-  .presentation__description__subTitle h2 {
-    font-size: 1.2em;
-    text-align: center;
-  }
-  .presentation__img {
-    height: 22em;
-    margin: 0;
-  }
-
-  .aboutMe {
-    font-size: 14px;
-    min-height: 50vh;
-  }
-  .aboutMe__title {
-    margin-top: 0.4em;
-  }
-  .aboutMe__text {
-    padding: 0 0.5em;
-  }
-  .aboutMe__skills__container {
-    grid-template-columns: 1fr 1fr;
-  }
-  .aboutMe__skills__container__logo img {
-    width: 8em;
-  }
-  .aboutMe__skills__container__logo__description {
-    font-size: 0.95em;
-  }
-
   .projects {
     font-size: 14px;
   }
@@ -649,63 +610,11 @@ body {
     padding: 0 30px;
   }
 
-  .presentation {
-    font-size: 16px;
-    min-height: 75vh;
-    padding: 2em 0;
-  }
-  .presentation__img {
-    height: 22em;
-  }
-
-  .aboutMe {
-    font-size: 15px;
-  }
-  .aboutMe__title {
-    margin-top: 0.4em;
-  }
-  .aboutMe__skills__container {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .aboutMe__skills__container__logo img {
-    width: 7em;
-  }
-  .aboutMe__skills__container__logo__description {
-    font-size: 0.95em;
-  }
-
   .footer {
     font-size: 14px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-  .presentation {
-    font-size: 15px;
-    min-height: 60vh;
-  }
-  .presentation__img {
-    height: 20em;
-  }
-  .presentation__description__title h1 {
-    font-size: 4em;
-  }
-
-  .aboutMe {
-    font-size: 15px;
-  }
-  .aboutMe__title {
-    margin-top: 0.4em;
-  }
-  .aboutMe__skills__container {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .aboutMe__skills__container__logo img {
-    width: 7.5em;
-  }
-  .aboutMe__skills__container__logo__description {
-    font-size: 0.95em;
-  }
-
   .footer {
     font-size: 15px;
   }

@@ -76,13 +76,14 @@ main {
 @media only screen and (max-width:575px) {
     main {
         font-size: .85rem;
+        min-height: auto;
 
         & .presentation {
             width: 90%;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 2em;
+            padding-top: 2em;
 
             &__information {
                 margin-top: 0;
@@ -111,13 +112,14 @@ main {
 @media only screen and (min-width:576px) and (max-width:768px) {
     main {
         font-size: .95rem;
+        min-height: auto;
 
         & .presentation {
             width: 90%;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 2em;
+            padding-top: 2em;
 
             &__information {
                 margin-top: 0;
@@ -146,6 +148,7 @@ main {
 @media only screen and (min-width:768px) and (max-width:992px) {
     main {
         font-size: .9rem;
+        min-height: auto;
 
         & .presentation {
             width: 95%;

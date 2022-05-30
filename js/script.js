@@ -1,6 +1,8 @@
 const navCategorys = document.querySelector('.header__nav__categorys');
 const btnResponsiveNav = document.querySelector('.header__nav__btnCategorysResponsive');
 
+const Navlogo = document.querySelector('.header__nav__logo');
+
 const mainSection = document.querySelector('#main');
 const aboutMeSection = document.querySelector('#aboutMe');
 const projectsSection = document.querySelector('#projects');
@@ -9,10 +11,12 @@ const navLinkMain = document.querySelector('#navLinkMain');
 const navLinkAboutMe = document.querySelector('#navLinkAboutMe');
 const navLinkProjects = document.querySelector('#navLinkProjects');
 
+Navlogo.textContent = `</Jorge>`
 
 btnResponsiveNav.addEventListener('click', () => {
     navCategorys.classList.toggle('show');
 });
+
 navLinkMain.addEventListener('click', (e) => {
     e.preventDefault()
     if (navCategorys.classList.contains('show')) navCategorys.classList.toggle('show')

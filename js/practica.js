@@ -9,11 +9,6 @@ const typed =new Typed('.typed' , {
     backDelay:1000,
     loop:true
 });
-//Header - Efecto de cambio de color
-window.addEventListener("scroll",function(){
-    let header = document.querySelector("header");
-    header.classList.toggle("abajo" , window.scrollY>100);
-});
 
 let animado=document.querySelectorAll(".animado");
 window.addEventListener('scroll',function(){
