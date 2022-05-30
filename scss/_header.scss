@@ -29,13 +29,13 @@
             display: flex;
             list-style: none;
             background-color: transparent;
-
+ 
             & li {
                 margin: 0;
                 padding: 0;
 
                 & a {
-
+                    font-weight: 500;
                     text-decoration: none;
                     padding: .5em 1.2em;
                     border-radius: 8px;
