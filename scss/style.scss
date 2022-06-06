@@ -52,14 +52,17 @@ body {
 
 .mostrarDerecha {
     animation: mostrarDerecha 1s;
+    opacity: 1;
 }
 
 .mostrarArriba {
     animation: mostrarArriba 1s;
+    opacity: 1;
 }
 
 .mostrarAbajo {
     animation: mostrarAbajo 1s;
+    opacity: 1;
 }
 
 @keyframes mostrarDerecha {

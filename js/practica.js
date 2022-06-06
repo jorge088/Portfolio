@@ -16,7 +16,6 @@ window.addEventListener('scroll',function(){
     for(let i=0;i<animado.length;i++){
         let alturaAnimado = animado[i].offsetTop;
         if(alturaAnimado - 450 < scrollTop){
-            animado[i].style.opacity = 1;
             animado[i].classList.add("mostrarDerecha");
         }
     }
@@ -27,7 +26,6 @@ window.addEventListener('scroll',function(){
     for(let i=0;i<animado2.length;i++){
         let alturaAnimado = animado2[i].offsetTop;
         if(alturaAnimado - 450 < scrollTop){
-            animado2[i].style.opacity = 1;
             animado2[i].classList.add("mostrarArriba");
         }
     }
@@ -38,7 +36,6 @@ window.addEventListener('scroll',function(){
     for(let i=0;i<animado3.length;i++){
         let alturaAnimado = animado3[i].offsetTop;
         if(alturaAnimado - 450 < scrollTop){
-            animado3[i].style.opacity = 1;
             animado3[i].classList.add("mostrarAbajo");
         }
     }
