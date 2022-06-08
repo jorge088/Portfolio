@@ -2,10 +2,11 @@
     font-size: 16px;
     min-height: calc(100vh - 60px);
     color: #FFF;
-
+    display: flex;
+    flex-direction: column;
     &__item {
         margin: 2em 0;
-
+        padding-bottom: 1em;
         &__image {
 
             height: 22em;
@@ -30,6 +31,12 @@
                 background-position: center;
                 background-repeat: no-repeat;
             }
+            &.musicShop{
+                background: url('../asetts/musicShop.png');
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
 
         }
 
@@ -39,6 +46,7 @@
             align-items: center;
             justify-content: center;
             padding: 1em 2em;
+            gap: 1em;
 
             &__title {
                 font-size: 2em;

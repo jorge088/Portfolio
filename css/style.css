@@ -399,9 +399,12 @@ main .presentation__img img:hover {
   font-size: 16px;
   min-height: calc(100vh - 60px);
   color: #FFF;
+  display: flex;
+  flex-direction: column;
 }
 .projects__item {
   margin: 2em 0;
+  padding-bottom: 1em;
 }
 .projects__item__image {
   height: 22em;
@@ -424,12 +427,19 @@ main .presentation__img img:hover {
   background-position: center;
   background-repeat: no-repeat;
 }
+.projects__item__image.musicShop {
+  background: url("../asetts/musicShop.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .projects__item__description {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 1em 2em;
+  gap: 1em;
 }
 .projects__item__description__title {
   font-size: 2em;
