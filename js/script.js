@@ -13,6 +13,12 @@ const navLinkProjects = document.querySelector('#navLinkProjects');
 
 Navlogo.textContent = `</Jorge>`
 
+Navlogo.addEventListener('click', (e)=>{
+    e.preventDefault();
+    if (navCategorys.classList.contains('show')) navCategorys.classList.toggle('show')
+    scrollTo(0, mainSection.offsetTop - 60);
+})
+
 btnResponsiveNav.addEventListener('click', () => {
     navCategorys.classList.toggle('show');
 });

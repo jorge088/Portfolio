@@ -48,7 +48,7 @@
 
             &__box {
                 display: flex;
-                justify-content: space-between;
+                justify-content: space-around;
                 flex-wrap: wrap;
                 gap: 1.2em;
 
@@ -61,7 +61,6 @@
                         &:hover {
                             transform: rotate(360deg);
                             filter: drop-shadow(1px 1px 4px #dad6d6);
-                            cursor: pointer;
                         }
                     }
 
