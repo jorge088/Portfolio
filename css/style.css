@@ -261,14 +261,13 @@ main .presentation__img img:hover {
 .aboutMe {
   font-size: 1rem;
   font-family: "Roboto", sans-serif;
-  width: 100vw;
+  width: 80%;
+  max-width: 1200px;
   min-height: calc(100vh - 70px);
   color: #fff;
 }
 .aboutMe__container {
-  width: 80%;
-  height: 100%;
-  margin: 0 auto;
+  width: 100%;
   padding-top: 2em;
   display: flex;
   justify-content: space-between;
@@ -289,7 +288,7 @@ main .presentation__img img:hover {
 .aboutMe__container__information__item {
   display: flex;
   flex-direction: column;
-  gap: 0.8em;
+  gap: 0.9em;
 }
 .aboutMe__container__information__item p {
   font-size: 1.3em;
@@ -299,8 +298,8 @@ main .presentation__img img:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1.5em;
-  width: 300px;
+  gap: 1.2em;
+  width: 350px;
 }
 .aboutMe__container__skills__box {
   display: flex;
@@ -309,7 +308,7 @@ main .presentation__img img:hover {
   gap: 1.2em;
 }
 .aboutMe__container__skills__box__item img {
-  width: 80px;
+  width: 100px;
   height: auto;
   transition: 1.7s ease all;
 }
@@ -318,7 +317,7 @@ main .presentation__img img:hover {
   filter: drop-shadow(1px 1px 4px #dad6d6);
 }
 .aboutMe__container__skills__box__item p {
-  font-size: 0.9em;
+  font-size: 1em;
   font-weight: 400;
   text-align: center;
 }
@@ -328,30 +327,6 @@ main .presentation__img img:hover {
     font-size: 0.85rem;
   }
   .aboutMe__container {
-    width: 90%;
-    flex-direction: column;
-    align-items: center;
-    gap: 2em;
-  }
-  .aboutMe__container__information {
-    width: auto;
-  }
-  .aboutMe__container__information__item p {
-    text-align: justify;
-  }
-  .aboutMe__container__skills__box {
-    justify-content: space-around;
-  }
-  .aboutMe__container__skills__box__item img {
-    width: 110px;
-  }
-}
-@media only screen and (min-width: 576px) and (max-width: 768px) {
-  .aboutMe {
-    font-size: 0.9rem;
-  }
-  .aboutMe__container {
-    width: 90%;
     flex-direction: column;
     align-items: center;
     gap: 2em;
@@ -363,18 +338,42 @@ main .presentation__img img:hover {
     text-align: justify;
   }
   .aboutMe__container__skills {
-    width: 500px;
+    width: 100%;
+  }
+  .aboutMe__container__skills__box {
+    justify-content: space-around;
+  }
+  .aboutMe__container__skills__box__item img {
+    width: 95px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .aboutMe {
+    font-size: 0.9rem;
+  }
+  .aboutMe__container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+  }
+  .aboutMe__container__information {
+    width: auto;
+  }
+  .aboutMe__container__information__item p {
+    text-align: justify;
+  }
+  .aboutMe__container__skills {
+    width: 100%;
   }
   .aboutMe__container__skills__box {
     justify-content: space-evenly;
   }
   .aboutMe__container__skills__box__item img {
-    width: 100px;
+    width: 110px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   .aboutMe__container {
-    width: 90%;
     flex-direction: column;
     align-items: center;
     gap: 2em;
@@ -603,6 +602,11 @@ html {
 
 body {
   background-color: #393E41;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
 }
 
 .animado {
